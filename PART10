@@ -1,0 +1,13 @@
+EVENT HANDLER
+
+//inline style
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>event handling </title>
+</head>
+<body>
+  <Button onlclick="console.log('liked photo')">like</Button>
+</body>
+</html>
