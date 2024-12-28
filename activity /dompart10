@@ -1,0 +1,58 @@
+activity part10
+
+//html code
+
+<body>
+    
+
+    <h3>Generate random color</h3>
+    <br>
+    <Button >Generate color</Button>
+    <br>
+    <br>
+    <div>
+        this is your new color
+    </div>
+    
+    <script src="practice.js"></script>
+</body>
+
+//css 
+
+body{
+    text-align: center;
+
+}
+div{
+
+    height:100px;
+    width:500px;
+    border:1px solid black;
+    margin:auto;
+}
+
+//js code
+
+let btn=document.querySelector("Button");
+
+let div=document.querySelector("div"); 
+
+let h3=document.querySelector("h3");
+
+btn.addEventListener('click',function (){
+  console.log("color");
+  let col=clr();
+  console.log(col);
+  h3.innerText=col;
+  div.style.backgroundColor=col;
+});
+function clr(){
+  let r=Math.floor(Math.random()*255);
+  let g=Math.floor(Math.random()*255);
+  let b=Math.floor(Math.random()*255);
+  let color=`rgb(${r},${g},${b})`;
+  return color;
+};
+
+//output
+
